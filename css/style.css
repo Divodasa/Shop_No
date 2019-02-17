@@ -208,10 +208,33 @@ ol.carousel-indicators {
     margin-bottom: 0;
 }
 
-
-/*=====================Movie==================*/
-
-/*===================Our_works================*/
+/*===============.featured_works==============*/
+.wrapper_works {
+    width: 95%;
+    margin: 0 auto;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 125px;
+}
+.gallery div {
+    cursor: pointer;
+    padding: 7px;
+    transition: .5s;
+}
+.gallery div:hover {
+    opacity: .8;
+    transition: .5s;
+}
+.gallery img {
+    width: 100%;
+}
+.description {
+    max-width: 650px;
+    margin: 0 auto;
+}
 
 /*===================gallery==================*/
 
@@ -251,6 +274,10 @@ ol.carousel-indicators {
     .main_slogan h1 {
         margin-top: 11rem;
     }
+    /*gallery*/
+    .gallery div {
+        width: 33%;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -268,7 +295,7 @@ ol.carousel-indicators {
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
     h1 {
-        margin-top: 70px;
+        margin-top: 60px;
     }
     .paragraph {
         margin-bottom: 40px;
@@ -315,6 +342,13 @@ ol.carousel-indicators {
     .description h2 {
         text-align: center;
     }
+    /*gallery*/
+    .gallery {
+        margin-bottom: 60px;
+    }
+    .gallery div {
+        width: 40%;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -337,6 +371,10 @@ ol.carousel-indicators {
     }
     .wrapper_ {
         margin: 42px auto 23px auto;
+    }
+    /*gallery*/
+    .gallery div {
+        width: 47%;
     }
 }
 
@@ -388,6 +426,10 @@ ol.carousel-indicators {
     .nav_logo img {
         margin-top: 1px;
     }
+    /*gallery*/
+    .gallery div {
+        width: 100%;
+    }
 }
 
 
@@ -407,5 +449,13 @@ ol.carousel-indicators {
     }
     .wrapper_ {
         margin: 180px auto 80px auto;
+    }
+    /*featured works*/
+    .wrapper_works {
+        width: 73%;
+        margin: 0 auto;
+    }
+    .gallery {
+        flex-wrap: nowrap;
     }
 }
