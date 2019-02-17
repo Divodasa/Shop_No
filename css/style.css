@@ -262,6 +262,7 @@ ol.carousel-indicators {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 2560px) {
     @-moz-document url-prefix() {
+
     }
 }
 
@@ -348,6 +349,12 @@ ol.carousel-indicators {
     }
     .gallery div {
         width: 40%;
+    }
+    @-moz-document url-prefix() {
+        .wrapper_works {
+            width: 85%;
+            margin: 0 auto;
+        }
     }
 }
 
