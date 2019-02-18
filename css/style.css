@@ -338,6 +338,12 @@ ol.carousel-indicators {
 .line_reference {
     cursor: pointer;
 }
+.line_reference i {
+    font-size: 30px;
+    vertical-align: middle;
+    margin-left: 6px;
+    margin-top: -2px;
+}
 /*===========design_frames: onclick===========*/
 
 .line_inner_more {
