@@ -336,6 +336,7 @@ ol.carousel-indicators {
     margin: 2px 0 0 8px;
 }
 .line_reference {
+    height: 60px;
     cursor: pointer;
 }
 .line_reference i {
