@@ -201,7 +201,7 @@ header {
     margin-bottom: 0;
 }
 .carousel-indicators li.active {
-    background-color: rgb(118, 244, 234);;
+    background-color: rgb(118, 244, 234);
 }
 ol.carousel-indicators {
     margin-top: 15px;
@@ -259,22 +259,27 @@ ol.carousel-indicators {
     height: 422px;
     margin-bottom: 1%;
 }
-.line_11 {
-    background: url("../img/frame_1.png") center no-repeat;
-    background-size: cover;
-    box-shadow: inset rgba(0,0,0,.7) 0 -442px 0;
-}
-
-.line_12 {
-    background: url("../img/frame_2.png") center no-repeat;
-    background-size: cover;
-}
 .frame_line_2 {
     display: grid;
     grid-template-columns: 56% 43%;
     justify-content: space-between;
     height: 371px;
     margin-bottom: 1%;
+}
+.frame_line_3 {
+    display: grid;
+    grid-template-columns: 43% 56%;
+    justify-content: space-between;
+    height: 371px;
+}
+.line_11 {
+    background: url("../img/frame_1.png") center no-repeat;
+    background-size: cover;
+    box-shadow: inset rgba(0,0,0,.7) 0 -442px 0;
+}
+.line_12 {
+    background: url("../img/frame_2.png") center no-repeat;
+    background-size: cover;
 }
 .line_21 {
     background: url("../img/frame_3.png") center no-repeat;
@@ -283,12 +288,6 @@ ol.carousel-indicators {
 .line_22 {
     background: url("../img/frame_4.png") center no-repeat;
     background-size: cover;
-}
-.frame_line_3 {
-    display: grid;
-    grid-template-columns: 43% 56%;
-    justify-content: space-between;
-    height: 371px;
 }
 .line_31 {
     background: url("../img/frame_5.png") center no-repeat;
@@ -307,6 +306,7 @@ ol.carousel-indicators {
     color: rgba(255, 255, 255, 0.902);
     line-height: 1.563;
     text-align: left;
+    height: 40px;
     max-width: 600px;
 }
 .line_inner {
@@ -314,12 +314,10 @@ ol.carousel-indicators {
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
+    padding: 0 4rem 21px 4rem;
 }
 .line_reference {
     display: flex;
-}
-.line_inner {
-    padding: 0 4rem 21px 4rem;
 }
 .design_frames a {
     font-size: 19px;
@@ -340,6 +338,35 @@ ol.carousel-indicators {
 .line_reference {
     cursor: pointer;
 }
+/*===========design_frames: onclick===========*/
+
+.line_inner_more {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0 4rem 21px 4rem;
+    box-shadow: inset rgba(118, 244, 234, .9) 0 -442px 0;
+}
+.line_inner_more span {
+    margin: 0 0 0 -3px;
+}
+.line_inner_more h2,
+.line_inner_more p {
+    color: rgba(0, 0, 0, 0.831);
+}
+.line_inner_more span {
+    color: rgb(0, 0, 0);
+    opacity: 0.4;
+    cursor: pointer;
+}
+.design_frames .line_inner_more p {
+    height: 170px;
+    max-width: 600px;
+}
+
+
+
 /*====================mozilla=================*/
 @-moz-document url-prefix() {
     .design_frames span {
@@ -421,6 +448,15 @@ ol.carousel-indicators {
     .frame_line_3 {
         height: 290px;
     }
+    .line_inner_more {
+        padding: 0 2rem 21px 2rem;
+    }
+    .design_frames .line_inner_more p {
+        height: 140px;
+    }
+    .design_frames .line_inner_more h2 {
+        margin-top: 40px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -490,7 +526,14 @@ ol.carousel-indicators {
     .design_frames {
         margin-bottom: 60px;
     }
-}
+    .design_frames p {
+        height: 60px;
+    }
+    .design_frames .line_inner_more p {
+        font-size: 14px;
+    }
+
+    }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -526,6 +569,19 @@ ol.carousel-indicators {
         width: 100%;
     }
     .line_inner {
+        padding: 60px 1rem 0 1rem;
+        border-bottom: 15px solid #F8FAFA;
+    }
+    .design_frames p {
+        height: 40px;
+    }
+    .design_frames .line_inner_more p {
+        height: 80px;
+    }
+    .line_inner_more span {
+        margin: 20px 0 0 -3px;
+    }
+    .line_inner_more {
         padding: 60px 1rem 0 1rem;
         border-bottom: 15px solid #F8FAFA;
     }
@@ -594,6 +650,7 @@ ol.carousel-indicators {
     .design_frames p {
         font-size: 12px;
         margin-bottom: 0;
+        height: 55px;
     }
     .line_inner {
         padding: 60px 1rem 0 1rem;
@@ -604,6 +661,12 @@ ol.carousel-indicators {
     .design_frames span {
         font-size: 2rem;
         margin: 6px 0 0 3px;
+    }
+    .design_frames .line_inner_more p {
+        height: 177px;
+    }
+    .line_inner_more {
+        padding: 0 1rem 0 1rem;
     }
     @-moz-document url-prefix() {
         .design_frames span {
@@ -646,5 +709,9 @@ ol.carousel-indicators {
     .wrapper__services {
         width: 75%;
         margin: 0 auto;
+    }
+    .design_frames .line_inner_more p {
+        height: 120px;
+        max-width: 100%;
     }
 }
