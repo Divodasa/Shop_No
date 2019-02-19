@@ -316,9 +316,6 @@ ol.carousel-indicators {
     height: 100%;
     padding: 0 4rem 21px 4rem;
 }
-.line_reference {
-    display: flex;
-}
 .design_frames a {
     font-size: 19px;
     font-family: "Raleway", sans-serif;
@@ -331,19 +328,18 @@ ol.carousel-indicators {
     text-decoration: none;
 }
 .design_frames span {
-    font-size: 3rem;
     color: rgba(255, 255, 255, 0.769);
-    margin: 2px 0 0 8px;
+    margin: 0 0 0 10px;
 }
 .line_reference {
-    height: 60px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
-.line_reference i {
-    font-size: 30px;
-    vertical-align: middle;
-    margin-left: 6px;
-    margin-top: -2px;
+.line_reference span {
+    background: url("../img/arrow.png") no-repeat 0 center;
+    width: 35px;
+    height: 10px;
 }
 /*===========design_frames: onclick===========*/
 
@@ -376,11 +372,7 @@ ol.carousel-indicators {
 
 /*====================mozilla=================*/
 @-moz-document url-prefix() {
-    .design_frames span {
-        font-size: 2rem;
-        margin: 17px 0 0 7px;
-        font-weight: 300;
-    }
+
 }
 
 
@@ -665,10 +657,6 @@ ol.carousel-indicators {
     .design_frames a {
         font-size: 15px;
     }
-    .design_frames span {
-        font-size: 2rem;
-        margin: 6px 0 0 3px;
-    }
     .design_frames .line_inner_more p {
         height: 177px;
     }
@@ -676,10 +664,6 @@ ol.carousel-indicators {
         padding: 0 1rem 0 1rem;
     }
     @-moz-document url-prefix() {
-        .design_frames span {
-            font-size: 1.5rem;
-            margin: 13px 0 0 6px;
-        }
         .design_frames h2 {
             margin-bottom: 8px;
         }
