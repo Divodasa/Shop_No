@@ -310,7 +310,7 @@ ol.carousel-indicators {
     max-width: 600px;
 }
 .line_inner {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
@@ -345,7 +345,7 @@ ol.carousel-indicators {
 /*===========design_frames: onclick===========*/
 
 .line_inner_more {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
@@ -363,6 +363,7 @@ ol.carousel-indicators {
     color: rgb(0, 0, 0);
     opacity: 0.4;
     cursor: pointer;
+    font-size: 50px;
 }
 .design_frames .line_inner_more p {
     height: 170px;
@@ -451,6 +452,9 @@ ol.carousel-indicators {
     .line_inner_more {
         padding: 0 2rem 21px 2rem;
     }
+    .line_inner_more span {
+        margin: -5px 0 0 -3px;
+    }
     .design_frames .line_inner_more p {
         height: 140px;
     }
@@ -533,7 +537,7 @@ ol.carousel-indicators {
         font-size: 14px;
     }
 
-    }
+}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -578,9 +582,6 @@ ol.carousel-indicators {
     .design_frames .line_inner_more p {
         height: 80px;
     }
-    .line_inner_more span {
-        margin: 20px 0 0 -3px;
-    }
     .line_inner_more {
         padding: 60px 1rem 0 1rem;
         border-bottom: 15px solid #F8FAFA;
@@ -607,6 +608,10 @@ ol.carousel-indicators {
     }
     .carousel-item {
         background-size: 100%;
+    }
+    /*our services*/
+    .line_inner_more p {
+        line-height: 1.4;
     }
 }
 
@@ -663,6 +668,12 @@ ol.carousel-indicators {
     }
     .line_inner_more {
         padding: 0 1rem 0 1rem;
+    }
+    .line_inner_more span {
+        margin: -12px 0 0 -3px;
+    }
+    .line_inner_more p {
+        line-height: 1.5;
     }
     @-moz-document url-prefix() {
         .design_frames h2 {
