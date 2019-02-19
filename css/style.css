@@ -329,7 +329,7 @@ ol.carousel-indicators {
 }
 .design_frames span {
     color: rgba(255, 255, 255, 0.769);
-    margin: 0 0 0 10px;
+    margin: 0 0 0 12px;
 }
 .line_reference {
     display: flex;
@@ -337,9 +337,10 @@ ol.carousel-indicators {
     cursor: pointer;
 }
 .line_reference span {
-    background: url("../img/arrow.png") no-repeat 0 center;
-    width: 35px;
-    height: 10px;
+    width: 21px;
+    height: 11px;
+    background: url("../img/arr_final.png") no-repeat 0 center;
+    background-size: cover;
 }
 /*===========design_frames: onclick===========*/
 
