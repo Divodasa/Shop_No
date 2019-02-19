@@ -240,6 +240,7 @@ ol.carousel-indicators {
 .wrapper__services {
     width: 80%;
     margin: 0 auto;
+    max-width: 1250px;
 }
 .services {
     background: #F8FAFA;
@@ -310,7 +311,7 @@ ol.carousel-indicators {
     max-width: 600px;
 }
 .line_inner {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
@@ -345,7 +346,7 @@ ol.carousel-indicators {
 /*===========design_frames: onclick===========*/
 
 .line_inner_more {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
@@ -370,18 +371,54 @@ ol.carousel-indicators {
     max-width: 600px;
 }
 
+/*===================our_team=================*/
 
-
-/*====================mozilla=================*/
-@-moz-document url-prefix() {
-
+.wrapper_team {
+    width: 97%;
+    margin: 0 auto;
+    max-width: 1250px;
 }
-
-
-
-
-
-/*====================clients=================*/
+.small-team__team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.small-team__team img {
+    width: 100%;
+    padding: 0 8px 16px 8px;
+}
+.team__characteristics {
+    position: relative;
+    cursor: pointer;
+}
+.team__characteristics:hover .team__about {
+    opacity: 1;
+    transition: .5s;
+}
+.team__about {
+    position: absolute;
+    background-color: rgb(118, 244, 234);;
+    margin: 0 28px 20px 30px;
+    padding: 40px 30px;
+    bottom: 15px;
+    opacity: 0;
+    transition: .5s;
+}
+.team__about h2 > i {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18px;
+    text-transform: none;
+    color: #787878;
+}
+.team__about p {
+    line-height: 1.5;
+    margin: 20px 0 32px 0;
+}
+.team__about a > i {
+    color: #170F1C;
+    margin-right: 10px;
+}
 
 /*==================Who we are================*/
 
@@ -709,10 +746,6 @@ ol.carousel-indicators {
         flex-wrap: nowrap;
     }
     /*our services*/
-    .wrapper__services {
-        width: 75%;
-        margin: 0 auto;
-    }
     .design_frames .line_inner_more p {
         height: 120px;
         max-width: 100%;
