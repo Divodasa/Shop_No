@@ -383,6 +383,7 @@ ol.carousel-indicators {
     justify-content: center;
     flex-wrap: wrap;
     height: 100%;
+    padding-bottom: 110px;
 }
 .small-team__team img {
     width: 100%;
@@ -392,14 +393,15 @@ ol.carousel-indicators {
     position: relative;
     cursor: pointer;
 }
-.team__characteristics:hover .team__about {
+.team__characteristics:hover .team__about,
+.team__characteristics:hover .team_rectangle {
     opacity: 1;
     transition: .5s;
 }
 .team__about {
     position: absolute;
     background-color: rgb(118, 244, 234);;
-    margin: 0 28px 20px 30px;
+    margin: 0 28px 20px 28px;
     padding: 40px 30px;
     bottom: 15px;
     opacity: 0;
@@ -418,6 +420,14 @@ ol.carousel-indicators {
 .team__about a > i {
     color: #170F1C;
     margin-right: 10px;
+}
+.small-team__team .team_rectangle {
+    position: absolute;
+    width: 38px;
+    top: 160px;
+    left: 45px;
+    opacity: 0;
+    transition: .5s;
 }
 
 /*==================Who we are================*/
@@ -573,6 +583,10 @@ ol.carousel-indicators {
     .design_frames .line_inner_more p {
         font-size: 14px;
     }
+    /*our team*/
+    .small-team__team {
+        padding-bottom: 60px;
+    }
 
 }
 
@@ -716,6 +730,25 @@ ol.carousel-indicators {
         .design_frames h2 {
             margin-bottom: 8px;
         }
+    }
+    /*our team*/
+    .team__about {
+        padding: 24px 30px;
+        height: 54.5%;
+    }
+    .team__about h2 {
+    font-size: 1rem;
+    }
+    .team__about p {
+        font-size: .9rem;
+        line-height: 1.3;
+        margin: 12px 0 19px 0
+    }
+    .team__about h2 > i {
+        font-size: 13px;
+    }
+    .small-team__team .team_rectangle {
+        top: 10rem;
     }
 }
 
