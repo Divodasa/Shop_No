@@ -484,6 +484,17 @@ ol.carousel-indicators {
 .what_say__slider .carousel-item {
     background: url("../img/test_back.png") center no-repeat;
 }
+.carousel-control-prev-icon {
+    background-image: url("../img/icons8-chevron-left-24.png");
+}
+.carousel-control-next-icon {
+    background-image: url("../img/icons8-chevron-right-24.png");
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 30px;
+    height: 17px;
+}
 
 
 /*================Some features===============*/
@@ -745,8 +756,8 @@ ol.carousel-indicators {
     .what_say__about {
         padding: 46px 20px 60px 20px;
     }
-    .what_say__slider .carousel-item img {
-        width: auto;
+    .what_say__slider .carousel-item {
+        background-size: 93%;
     }
 }
 
