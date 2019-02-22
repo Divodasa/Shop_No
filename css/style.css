@@ -69,6 +69,7 @@ header {
     margin-top: 65px;
 }
 .nav_logo h2 {
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 17px;
     font-weight: 800;
@@ -408,7 +409,6 @@ ol.carousel-indicators {
     transition: .5s;
 }
 .team__about h2 > i {
-    font-family: 'Merriweather Sans', sans-serif;
     font-size: 18px;
     text-transform: none;
     color: #787878;
@@ -445,8 +445,7 @@ ol.carousel-indicators {
     background: #F8FAFA;
 }
 .what_say__about h2 > i {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     text-transform: none;
     color: #787878;
 }
@@ -477,6 +476,7 @@ ol.carousel-indicators {
     height: 328px;
     margin-top: 48px;
     margin-left: 25px;
+    margin-right: 1%;
     padding: 65px 62px 60px 62px;
 }
 .what_say__slider {
@@ -496,6 +496,7 @@ ol.carousel-indicators {
     margin-top: 14px;
     width: 30px;
     height: 17px;
+    opacity: .5;
     transition: .5s;
 }
 .controls {
@@ -521,6 +522,7 @@ ol.carousel-indicators {
     border: 0 solid black;
     border-radius: 4px;
     transition: .5s;
+    opacity: 1;
     box-shadow: 3px 3px 10px 3px #e0e0e0;
 }
 .carousel-control-prev:hover,
@@ -535,12 +537,37 @@ ol.carousel-indicators {
     transition: .5s;
 }
 
+/*==================Partners==================*/
 
-/*================Some features===============*/
+.partners {
+    margin: 100px 0 65px 0;
+}
+.wrapper__partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.partners__header,
+.bottom__top,
+.bottom__bottom {
+    display: flex;
+    justify-content: space-around;
+    width: 48%;
+    height: 100%;
+    margin-bottom: 45px;
+}
+.partners__bottom {
+    display: flex;
+    justify-content: center;
+    width: 93%;
+    height: 100%;
+}
+.wrapper__partners img {
+    width: 100%;
+}
 
-/*=================Blog Posts=================*/
-
-/*================Choose plan=================*/
 
 /*================Get in touch================*/
 
@@ -617,6 +644,10 @@ ol.carousel-indicators {
     .wrapper_say {
         width: 92%;
         margin: 0 auto;
+    }
+    /*.partners*/
+    .partners .wrapper {
+        width: 100%;
     }
 }
 
@@ -714,6 +745,13 @@ ol.carousel-indicators {
     .what_say__about p {
         height: auto;
     }
+    /*.partners*/
+    .partners {
+        margin: 50px 0 5px 0;
+    }
+    .partners__header {
+        margin-bottom: 35px;
+    }
 
 }
 
@@ -770,6 +808,19 @@ ol.carousel-indicators {
     }
     .what_say__about {
         padding: 46px 62px 60px 62px;
+    }
+    .partners__bottom {
+        align-items: center;
+        flex-direction: column;
+    }
+    .partners__header,
+    .bottom__top,
+    .bottom__bottom {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .partners__header {
+        width: 93%;
     }
 }
 
@@ -912,30 +963,42 @@ ol.carousel-indicators {
     .wrapper {
         width: 70%;
     }
+
     /*header*/
     .main_slogan h1 {
         font-size: 2vw;
     }
+
     .main_slogan h1 {
         margin-top: 13rem;
     }
+
     .wrapper_ {
         width: 60%;
     }
+
     .wrapper_ {
         margin: 180px auto 80px auto;
     }
+
     /*featured works*/
     .wrapper_works {
         width: 73%;
         margin: 0 auto;
     }
+
     .gallery {
         flex-wrap: nowrap;
     }
+
     /*our services*/
     .design_frames .line_inner_more p {
         height: 120px;
         max-width: 100%;
+    }
+
+    /*what_say*/
+    .what_say__about {
+        margin-right: 70px;
     }
 }
