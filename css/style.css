@@ -568,10 +568,100 @@ ol.carousel-indicators {
     width: 100%;
 }
 
-
 /*================Get in touch================*/
+.wrapper_in_touch {
+    width: 88%;
+    margin: 0 auto;
+    max-width: 1450px;
+}
+.get-in-touch {
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    background: url("../img/back2.png") center no-repeat;
+    background-size: cover;
+    padding: 150px 0 120px 0;
+}
+.contact_us__form,
+.contact_us__map {
+    background-color: rgba(17, 28, 39, .81);
+    box-shadow: 0 0 30px 0 rgba(28, 28, 28, 0.12);
+}
 
-/*================Locate on map===============*/
+.contact_us__form {
+    flex-basis: 55%;
+    padding: 6px 40px 20px 40px;
+}
+.contact_us__map {
+    flex-basis: 43%;
+    padding: 24px 24px 20px 24px;
+}
+.contact_us__map div:first-of-type {
+    padding: 0 8px;
+}
+.contact_us__map p,
+.contact_us__map a {
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0;
+}
+.contact_us__map a:first-of-type {
+    display: block;
+    margin-top: 30px;
+}
+.contact_us__map a:last-of-type {
+    display: block;
+    margin-bottom: 26px;
+}
+.get-in-touch__contact_us {
+    display: flex;
+    justify-content: space-between;
+}
+.form__inputs input,
+.contact_us__form textarea {
+    color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    padding-left: 3px;
+    margin-top: 16px;
+}
+.contact_us__form textarea {
+    height: 108px;
+    margin-top: 30px;
+}
+input:focus,
+textarea:focus {
+    outline: transparent;
+}
+.contact_us__form p {
+    margin-top: 15px;
+}
+.button_block button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.702);
+    letter-spacing: 2px;
+    background: rgb(118, 244, 234);
+    border-radius: 2px;
+    border: none;
+    margin-top: 32px;
+    width: 240px;
+    height: 55px;
+}
+.button_block button:hover {
+    background: rgb(135, 255, 245);
+}
+
+/*===================Social===================*/
+
+
 
 /*============Exceptions for firefox==========*/
 
@@ -648,6 +738,10 @@ ol.carousel-indicators {
     /*.partners*/
     .partners .wrapper {
         width: 100%;
+    }
+    /*.get-in-touch*/
+    .get-in-touch {
+        padding: 70px 0 65px 0;
     }
 }
 
@@ -752,7 +846,16 @@ ol.carousel-indicators {
     .partners__header {
         margin-bottom: 35px;
     }
-
+    /*.get-in-touch*/
+    .get-in-touch__contact_us {
+        flex-direction: column;
+    }
+    .contact_us__map {
+        margin-top: 30px;
+    }
+    .button_block button {
+        margin-bottom: 20px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -856,6 +959,10 @@ ol.carousel-indicators {
     .what_say__slider .carousel-item {
         background-size: 93%;
     }
+    /*.get-in-touch*/
+    .wrapper_in_touch {
+        width: 95%;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -932,6 +1039,20 @@ ol.carousel-indicators {
     .what_say__about {
         height: auto;
         padding: 46px 20px 30px 20px;
+    }
+    /*.get-in-touch*/
+    .contact_us__form {
+        padding: 1px 20px 20px 20px;
+    }
+    .contact_us__map {
+        padding: 19px 20px 16px 20px;
+    }
+    .button_block button {
+        display: block;
+        font-size: 15px;
+        margin: 20px auto 0 auto;
+        width: 200px;
+        height: 50px;
     }
 }
 
