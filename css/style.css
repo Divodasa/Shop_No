@@ -659,9 +659,58 @@ textarea:focus {
     background: rgb(135, 255, 245);
 }
 
-/*===================Social===================*/
+/*==================Copyrights=================*/
 
-
+.copyrights {
+    display: flex;
+    background-color: #262B2E;
+}
+.copyrights_block {
+    padding: 90px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.copyrights_block h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.563;
+}
+.copyrights_block p {
+    font-size: 16px;
+    font-family: myriad-pro, sans-serif;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 35px 0 0 0;
+}
+.copyrights__social_icons {
+    display: flex;
+    justify-content: center;
+}
+.copyrights__social_icons div {
+    width: 42px;
+    height: 40px;
+    background-color: #43464A;
+    margin: 5px 10px 0 0;
+    padding: 10px 11px;
+    cursor: pointer;
+    transition: .5s;
+}
+.copyrights__social_icons div:hover {
+    background: rgb(118, 244, 234);
+    transition: .5s;
+}
+.copyrights__social_icons div:hover i {
+    color: #030505;
+    transition: .5s;
+}
+.copyrights__social_icons div:last-of-type {
+    margin-right: 0;
+}
+.copyrights__social_icons i {
+    font-size: 21px;
+    color: #BDBABA;
+    transition: .5s;
+}
 
 /*============Exceptions for firefox==========*/
 
@@ -855,6 +904,10 @@ textarea:focus {
     }
     .button_block button {
         margin-bottom: 20px;
+    }
+    /*.copyrights*/
+    .copyrights_block {
+        padding: 40px 0;
     }
 }
 
@@ -1053,6 +1106,11 @@ textarea:focus {
         margin: 20px auto 0 auto;
         width: 200px;
         height: 50px;
+    }
+    /*.copyrights*/
+    .copyrights_block p {
+        font-size: 12px;
+        margin: 22px 0 0 0;
     }
 }
 
