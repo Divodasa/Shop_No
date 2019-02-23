@@ -135,6 +135,12 @@ header {
     background-color: #e3e4e6;
     transition: .4s;
 }
+.main_slogan button:focus {
+    outline: none;
+}
+.nav_logo a:focus {
+    outline: none;
+}
 .juice_glass {
     background: url("../img/glass_orange.png") center, no-repeat;
     background-size: 100%;
@@ -338,6 +344,9 @@ ol.carousel-indicators {
     align-items: center;
     cursor: pointer;
 }
+.line_reference a:focus {
+    outline: none;
+}
 .line_reference span {
     width: 21px;
     height: 11px;
@@ -428,6 +437,9 @@ ol.carousel-indicators {
     left: 45px;
     opacity: 0;
     transition: .5s;
+}
+.team__social_references a:focus {
+    outline: none;
 }
 
 /*================What they say===============*/
@@ -567,6 +579,9 @@ ol.carousel-indicators {
 .wrapper__partners img {
     width: 100%;
 }
+.wrapper__partners a:focus {
+    outline: none;
+}
 
 /*================Get in touch================*/
 .wrapper_in_touch {
@@ -613,6 +628,9 @@ ol.carousel-indicators {
 .contact_us__map a:last-of-type {
     display: block;
     margin-bottom: 26px;
+}
+.contact_us__map a:focus {
+    outline: none;
 }
 .get-in-touch__contact_us {
     display: flex;
@@ -710,6 +728,9 @@ textarea:focus {
     font-size: 21px;
     color: #BDBABA;
     transition: .5s;
+}
+.copyrights__social_icons a:focus {
+    outline: none;
 }
 
 /*============Exceptions for firefox==========*/
